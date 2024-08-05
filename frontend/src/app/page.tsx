@@ -4,6 +4,7 @@ import { Aside } from "./components/aside";
 import { Card } from "./components/card";
 import { Table } from "./components/tabela/table";
 import { PiGearSixFill } from "react-icons/pi";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,11 +40,14 @@ export default function Home() {
                 icon={<MdHandyman size={48} />}
               />
 
-              <Card 
-                color={"bg-green-600"}
-                text={"Adicionar novo Item"}
-                icon={<MdOutlineAdd size={48} />}
-              />
+              <Link href="/cadastroMP">
+                <Card
+                  color={"bg-green-600"}
+                  text={"Adicionar novo Item"}
+                  icon={<MdOutlineAdd size={48} />}
+                />
+              </Link>
+
             </div>
             <div>
               <div className="p-5">
